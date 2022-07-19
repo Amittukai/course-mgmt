@@ -12,4 +12,7 @@ public interface ModuleRepository extends JpaRepository<Module, Long> {
 
     @Query("SELECT m FROM Module m WHERE m.code IN (:codes)")
     List<Module> findByModulesCode(@Param("codes") List<String> codes);
+
+    @Query("Select m from Module m where m.code = :code")
+    Module existsByModuleCode(@Param("code") String code);
 }

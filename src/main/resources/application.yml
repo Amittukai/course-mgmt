@@ -3,7 +3,7 @@ server:
 spring:
   datasource:
     username: postgres
-    password: postgres
+    password: Amit
     url: jdbc:postgresql://localhost:5432/coursedb?useSSL=false
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
